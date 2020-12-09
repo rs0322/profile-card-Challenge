@@ -1,0 +1,90 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg),
+                url(images/bg-pattern-bottom.svg);
+    background-position: top -80vh left -25vw, bottom -93vh right -30vw;
+    font-family: 'Kumbh Sans', sans-serif; 
+    background-repeat: no-repeat;           
+}
+
+#container{
+    width:320px;
+    background-color: white;
+    margin: auto;
+    margin-top:12%;
+    border-radius: 15px;
+    height:360px
+}
+
+.profile{
+    width:100%;
+    border-radius: 15px 15px 0 0;
+    height:140px;
+    margin-top: 0px;
+}
+
+.profile-img{
+    width:95px;
+    border: white solid 5px;
+    border-radius:50%;
+    display:block;    
+    position: relative;
+    margin:-60px auto;
+
+}
+.name{
+    position:relative;
+    text-align: center;
+    margin-top:75px;
+    font-weight:700;
+    font-size:18px;
+    color:hsl(229, 23%, 23%);
+    letter-spacing:1px;
+
+}
+.age{
+    font-weight:400;
+    color: hsl(227, 10%, 46%);
+}
+
+.city{
+    font-weight:400;
+    font-size:14px;
+    line-height: 40px;
+    color:hsl(227, 10%, 46%);
+}
+
+hr{
+    opacity:30%;
+}
+
+.stats{
+    margin: 20px;
+    display:flex;
+}
+
+.stats > .statnum{
+    text-align: center;
+    margin:auto;
+    font-weight:700;
+    font-size:18px;
+    color:hsl(229, 23%, 23%);
+    letter-spacing: 1px;
+    line-height:20px
+}
+
+.statsname{
+    font-weight: 400;
+    font-size: 12px;
+    color:hsl(227, 10%, 46%);
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    body{
+    background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+    background-position: top -100vh left -140vw, bottom -105vh right -130vw;
+    background-repeat: no-repeat; 
+    }
+}
